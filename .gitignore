@@ -1,0 +1,59 @@
+# Flutter/Dart/Pub related
+.dart_tool/
+.packages
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-versions
+.idea/
+.packages
+.pub-cache/
+.pubspec.lock
+
+# Obsolete cache
+.flutter-plugins
+
+# Android specific
+**/android/.gradle/
+**/android/.idea/
+**/android/captures/
+**/android/app/**/*.iml
+
+# iOS specific
+**/ios/Flutter/Flutter.framework/
+**/ios/Flutter/Flutter.podspec
+**/ios/Pods/
+**/ios/Runner.xcworkspace/
+**/ios/*.xcuserstate
+**/ios/Podfile.lock
+
+# VSCode settings
+.vscode/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+
+# macOS files
+.DS_Store
+
+# Coverage files
+coverage/
+
+# Generated files
+*.log
+
+# Other useful ignores
+*.lock
+*.swp
+*.tmp
+
+# Flutter test outputs
+test_driver/build/
+
+# Secrets or env files (if you use)
+.env
+.env.*
+
