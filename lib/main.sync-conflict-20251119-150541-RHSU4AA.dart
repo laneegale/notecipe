@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         title: 'Notecipe',
         theme: AppTheme.lightTheme,
         darkTheme: AppTheme.darkTheme,
-        themeMode: ThemeMode.system,
+        themeMode: ThemeMode.light,
         home: StartupPage(),
       ),
     );

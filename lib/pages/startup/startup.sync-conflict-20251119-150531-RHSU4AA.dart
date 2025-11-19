@@ -6,6 +6,7 @@ import 'package:notecipe/pages/main_shell.dart';
 class StartupPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       // Main content goes here
       body: Center(
@@ -27,23 +28,6 @@ class StartupPage extends StatelessWidget {
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () async {
-                  final _ = await showDialog<bool>(
-                    context: context,
-                    builder: (context) => AlertDialog(
-                      title: Text('Alert'),
-                      content: Text('Not implemented.'),
-                      actions: [],
-                    ),
-                  );
-                },
-                child: Text('Login'),
-              ),
-            ),
-            SizedBox(height: 12),
-            SizedBox(
-              width: double.infinity,
-              child: TextButton(
-                onPressed: () async {
                   bool loginSuccess = true;
 
                   if (loginSuccess) {
@@ -53,7 +37,39 @@ class StartupPage extends StatelessWidget {
                     );
                   }
                 },
-                child: Text('skip'),
+                child: Text('Login'),
+              ),
+            ),
+            SizedBox(height: 12), // Space between buttons
+            // Register button
+            SizedBox(
+              width: double.infinity,
+              child: OutlinedButton(
+                onPressed: () {
+                  // Your register action
+                },
+                child: Text('Register'),
+              ),
+            ),
+            SizedBox(height: 12), // Space between buttons
+            // Login with Google button with icon
+            SizedBox(
+              width: double.infinity,
+              child: OutlinedButton.icon(
+                onPressed: () {
+                  // Your Login with Google action
+                },
+                icon: Image.asset(
+                  'assets/google-icon.png', // Change to your icon path
+                  height: 24,
+                  width: 24,
+                ),
+                label: Text('Login with Google'),
+                style: OutlinedButton.styleFrom(
+                  side: BorderSide(color: Colors.grey),
+                  foregroundColor: Colors.black87, // Text and icon color
+                  padding: EdgeInsets.symmetric(vertical: 14),
+                ),
               ),
             ),
           ],
